@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("pics/pawel-czerwinski-lDtmU_ABtcU-unsplash.jpg");
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center center;
+   overflow: hidden;
+    /* background-colsor: antiquewhite; */
+}
+.surface{
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    'selectable drop1 drop2 drop3'
+    'selectable drop1 drop2 drop3'
+    'selectable drop1 drop2 drop3'
+    'selectable drop4 drop5 drop6'
+    'selectable drop4 drop5 drop6'
+    'selectable drop4 drop5 drop6'; 
+    
+    
+    grid-gap: 20px;
+    /* margin: 5% ; */
+    padding:  2rem;
+    /* border-radius: 15px; */
+}
+
+.box{
+    background-color: #d4e7f817;
+    height: 18rem;   
+    width: 12rem;
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left; */
+    align-items: center;
+}
+.selectable{
+    background-color: #d4e7f817;
+    width: 12rem;
+    grid-area: selectable;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    
+}
+
+.drop1{
+    grid-area: drop1;
+    /* margin: 1%; */
+}
+.drop2{
+    grid-area: drop2;
+
+    /* margin: 1%; */
+}
+.drop3{
+    grid-area: drop3;
+
+    /* margin: 1%; */
+}
+.drop4{
+    grid-area: drop4;
+
+    /* margin: 1%; */
+}
+.drop5{
+    grid-area: drop5;
+
+    /* margin: 1%; */
+}
+.drop6{
+    grid-area: drop6;
+
+    /* margin: 1%; */
+}
+.btn{
+    background-color: rgb(221, 231, 240);
+    color: black;
+    border: none;
+    /* position: absolute; */
+    width: 11rem;
+    border-radius: 0;
+    margin: 2%;
+}
